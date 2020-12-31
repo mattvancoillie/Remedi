@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".navigation.UserPreviewFragment"
+    android:background="#77A5F8">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/userPreviewContstaint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ScrollView
+                android:id="@+id/scrollViewPreview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:paddingTop="10sp"
+                        android:paddingBottom="25sp"
+                        tools:src="@tools:sample/avatars" />
+
+                    <TextView
+                        android:id="@+id/lblAboutTitle"
+                        style="@style/lblTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About User" />
+
+                    <TextView
+                        android:id="@+id/lblFullName"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Full Name"
+                        android:textAlignment="viewStart"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lblName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="Lucas Rona"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblGender"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textAlignment="viewStart"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lblMale"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="Male"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblBirthDate"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Birth Date"
+                        android:textAlignment="viewStart"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lblDate"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="30/12/2020"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblTelephone"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone"
+                        android:textAlignment="viewStart"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lblNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="+32 000 000000"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblCountry"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:textAlignment="viewStart"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lblName5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="Belgium"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblAdress"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Adress"
+                        android:textAlignment="viewStart"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lblAdr"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="Rijselstraat 101, Menen"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblPostal"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Postal Code"
+                        android:textAlignment="viewStart"
+                        android:textSize="17sp" />
+
+                    <TextView
+                        android:id="@+id/lblPC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="8930"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblAboutTitle2"
+                        style="@style/lblTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Medical Info" />
+
+                    <TextView
+                        android:id="@+id/lblBloodType2"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Group"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblBlood2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="blood group A"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblDisease2"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type Of Disease" />
+
+                    <TextView
+                        android:id="@+id/lblDiseaseName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="coronary artery disease"
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblAboutDisease2"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About Disease"
+                        android:textSize="15sp" />
+
+                    <TextView
+                        android:id="@+id/lblDiseaseName2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway"
+                        android:paddingLeft="15sp"
+                        android:paddingTop="5sp"
+                        android:text="Coronary artery disease is the narrowing or blockage of the coronary arteries. This condition is usually caused by atherosclerosis. Atherosclerosis is the build-up of cholesterol and fatty deposits (called plaques) inside the arteries."
+                        android:textAlignment="viewStart"
+                        android:textColor="#FFFFFF"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>

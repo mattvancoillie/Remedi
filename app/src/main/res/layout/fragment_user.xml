@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="be.vives.remediapp.navigation.UserFragment"
+    android:background="#77A5F8">
+
+    <data>
+        <variable
+            android:name="user"
+            android:type="be.vives.remediapp.navigation.UserFragment" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/userConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/btnSaveData"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Save Data" />
+
+            <Button
+                android:id="@+id/btnPreviewData"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#E53935"
+                android:text="Preview Data" />
+
+            <ScrollView
+                android:id="@+id/scrollView"
+                android:layout_width="416dp"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/lblInfo"
+                        android:text="Primary Info"
+                        style="@style/lblTitle" />
+
+                    <TextView
+                        android:id="@+id/lblFirstName"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:text="First Name"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editFirstName"
+                        style="@style/editStyle"
+                        android:hint="First Name..."
+                        android:paddingBottom="5sp" />
+
+                    <TextView
+                        android:id="@+id/lblLastName"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Last Name"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editLastName"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Last Name..."
+                        android:inputType="textPersonName"
+                        android:paddingBottom="5sp" />
+
+                    <TextView
+                        android:id="@+id/lblGender"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Gender"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editGender"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Gender..."
+                        android:inputType="textPersonName"
+                        android:paddingBottom="5sp" />
+
+                    <TextView
+                        android:id="@+id/lblBirthDate"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Date of Birth"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editTextDate"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="DD/MM/YY"
+                        android:inputType="date"
+                        android:paddingBottom="5sp" />
+
+                    <TextView
+                        android:id="@+id/lblTelephone"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Telephone"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editTextNumber"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Telephone..."
+                        android:inputType="number"
+                        android:paddingBottom="5sp" />
+
+                    <TextView
+                        android:id="@+id/lblCountry"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Country"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editCountry"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Country..."
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/lblAdress"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Adress"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editAdress"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Adress..."
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/lblState"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="State"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editState"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="State..."
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/lblPostCode"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Post Code"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editPostcode"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="PostCode..."
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/lblMedical"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/raleway_bold"
+                        android:padding="10sp"
+                        android:paddingTop="5sp"
+                        android:text="Medical Info"
+                        android:textAlignment="center"
+                        android:textColor="#FFFFFF"
+                        android:textSize="25sp" />
+
+                    <TextView
+                        android:id="@+id/lblBloodType"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Blood Group"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editBloodType"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Bloodtype..."
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/lblDisease"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Type Of Disease" />
+
+                    <EditText
+                        android:id="@+id/editDisease"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:hint="Disease..."
+                        android:inputType="textPersonName" />
+
+                    <TextView
+                        android:id="@+id/lblAboutDisease"
+                        style="@style/lblStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="About Disease"
+                        android:textSize="15sp" />
+
+                    <EditText
+                        android:id="@+id/editAboutDisease"
+                        style="@style/editStyle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:ems="10"
+                        android:gravity="start|top"
+                        android:hint="About your disease..."
+                        android:inputType="textMultiLine"
+                        android:textAlignment="viewStart" />
+
+                </LinearLayout>
+            </ScrollView>
+
+        </LinearLayout>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

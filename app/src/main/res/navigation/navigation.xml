@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/navigation"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="be.vives.remediapp.navigation.HomeFragment"
+        android:label="Remedi"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_pillBoxFragment"
+            app:destination="@id/pillBoxFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/pillBoxFragment"
+        android:name="be.vives.remediapp.navigation.PillBoxFragment"
+        android:label="Your Pillbox"
+        tools:layout="@layout/fragment_pill_box" >
+        <action
+            android:id="@+id/action_pillBoxFragment_to_pillBoxDetailFragment"
+            app:destination="@id/pillBoxDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="be.vives.remediapp.navigation.AboutFragment"
+        android:label="fragment_about"
+        tools:layout="@layout/fragment_about" />
+    <fragment
+        android:id="@+id/mediFragment"
+        android:name="be.vives.remediapp.navigation.overviewmedi.MediFragment"
+        android:label="Medication Info"
+        tools:layout="@layout/fragment_medi" >
+        <action
+            android:id="@+id/action_mediFragment_to_mediDetailFragment"
+            app:destination="@id/mediDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userFragment"
+        android:name="be.vives.remediapp.navigation.UserFragment"
+        android:label="User Data"
+        tools:layout="@layout/fragment_user">
+        <action
+            android:id="@+id/action_userFragment_to_userPreviewFragment"
+            app:destination="@id/userPreviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userPreviewFragment"
+        android:name="be.vives.remediapp.navigation.UserPreviewFragment"
+        android:label="User Data Preview"
+        tools:layout="@layout/fragment_user_preview" />
+    <fragment
+        android:id="@+id/mediDetailFragment"
+        android:name="be.vives.remediapp.navigation.medidetail.MediDetailFragment"
+        android:label="fragment_medi_detail"
+        tools:layout="@layout/fragment_medi_detail" />
+    <fragment
+        android:id="@+id/pillBoxDetailFragment"
+        android:name="be.vives.remediapp.navigation.PillBoxDetailFragment"
+        android:label="fragment_pill_box_detail"
+        tools:layout="@layout/fragment_pill_box_detail" />
+    <fragment
+        android:id="@+id/myMedicationFragment"
+        android:name="be.vives.remediapp.navigation.MyMedicationFragment"
+        android:label="fragment_my_medication"
+        tools:layout="@layout/fragment_my_medication" />
+</navigation>
