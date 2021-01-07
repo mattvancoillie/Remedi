@@ -10,22 +10,18 @@ import be.vives.remediapp.R
 import be.vives.remediapp.databinding.FragmentUserBinding
 
 class UserFragment : Fragment() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-    }
 
     override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
-        val binding = DataBindingUtil.inflate<FragmentUserBinding>(inflater, R.layout.fragment_user, container, false)
-
-        binding.user = this
-
-        binding.btnPreviewData.setOnClickListener @Suppress("UNUSED_ANONYMOUS_PARAMETER")
-        { view: View ->
-            view.findNavController().navigate(UserFragmentDirections.actionUserFragmentToUserPreviewFragment())
+        val binding : FragmentUserBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_user, container, false)
+        binding.btnPreviewData.setOnClickListener {view: View ->
+            view.findNavController().navigate(R.id.action_userFragment_to_userPreviewFragment)
         }
+        setHasOptionsMenu(true)
+        return binding.root
     }
+
 
     override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
         super.onCreateOptionsMenu(menu, inflater)
@@ -33,7 +29,7 @@ class UserFragment : Fragment() {
     }
 
     override fun onOptionsItemSelected(item: MenuItem): Boolean {
-        return NavigationUI.onNavDestinationSelected(item, view!!.findNavController()) || super.onOptionsItemSelected(item)
+        return NavigationUI.onNavDestinationSelected(item, requireView().findNavController()) || super.onOptionsItemSelected(item)
     }
 
 }

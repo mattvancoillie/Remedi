@@ -50,7 +50,11 @@
         android:id="@+id/userPreviewFragment"
         android:name="be.vives.remediapp.navigation.UserPreviewFragment"
         android:label="User Data Preview"
-        tools:layout="@layout/fragment_user_preview" />
+        tools:layout="@layout/fragment_user_preview" >
+        <action
+            android:id="@+id/action_userPreviewFragment_to_userFragment"
+            app:destination="@id/userFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mediDetailFragment"
         android:name="be.vives.remediapp.navigation.medidetail.MediDetailFragment"

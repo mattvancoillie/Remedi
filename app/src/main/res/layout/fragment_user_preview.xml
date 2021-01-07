@@ -1,15 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".navigation.UserPreviewFragment"
-    android:background="#77A5F8">
+    tools:context="be.vives.remediapp.navigation.UserPreviewFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="#77A5F8">
 
         <LinearLayout
             android:id="@+id/userPreviewContstaint"
@@ -263,4 +262,4 @@
             </ScrollView>
         </LinearLayout>
     </androidx.constraintlayout.widget.ConstraintLayout>
-</FrameLayout>
+</layout>

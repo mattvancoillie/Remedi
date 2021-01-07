@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
+import be.vives.remediapp.databinding.FragmentMediDetailBinding
 
 class MediDetailFragment : Fragment() {
     override fun onCreateView(
@@ -17,11 +18,11 @@ class MediDetailFragment : Fragment() {
         val binding = FragmentMediDetailBinding.inflate(inflater)
         binding.lifecycleOwner = this
 
-        val MedicationProperty = MediDetailFragmentArgs.fromBundle(arguments!!).selectedProperty
-        val viewModelFactory = MediDetailViewModelFactory(MedicationProperty, application)
-        val viewModel = ViewModelProvider(this, viewModelFactory).get(MediDetailViewModel::class.java)
+        //val medicationProperty = MediDetailFragmentArgs.fromBundle(requireArguments()).selectedProperty
+        //val viewModelFactory = MediDetailViewModelFactory(medicationProperty, application)
+        //val viewModel = ViewModelProvider(this, viewModelFactory).get(MediDetailViewModel::class.java)
 
-        binding.viewModel = viewModel
+        //binding.viewModel = viewModel
         return binding.root
         // Inflate the layout for this fragment
     }

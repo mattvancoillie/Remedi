@@ -3,4 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="aboutRemedi">Remedi</string>
+    <string name="aboutApp">The remedi application is made for people who take medication daily. thus to remind them what and when they have to take their medication. With that comes a digital pillbox the user can make themselves.</string>
+    <string name="titleAbout">About this app</string>
+    <string name="add_medication_to_date">Add Medication to Date</string>
 </resources>

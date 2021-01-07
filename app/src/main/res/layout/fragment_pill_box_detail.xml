@@ -1,14 +1,148 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
     tools:context=".navigation.PillBoxDetailFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:background="#77A5F8">
 
-</FrameLayout>
+        <LinearLayout
+            android:id="@+id/mediConstraint"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <Button
+                android:id="@+id/btnAddMedi"
+                style="@style/buttonStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/add_medication_to_date" />
+
+            <TextView
+                android:id="@+id/textView"
+                style="@style/lblTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Info " />
+
+            <TextView
+                android:id="@+id/txtMedicationName"
+                style="@style/lblStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Medication Name" />
+
+            <EditText
+                android:id="@+id/editTextMediName"
+                style="@style/editStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Medication Name..."
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtMedicationDosis"
+                style="@style/lblStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Prescribed Dosis" />
+
+            <EditText
+                android:id="@+id/editTextMediDosis"
+                style="@style/editStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="Prescribed Dosis"
+                android:inputType="textPersonName" />
+
+            <TextView
+                android:id="@+id/txtMedicationDosis2"
+                style="@style/lblStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="To take at" />
+
+            <EditText
+                android:id="@+id/editTaketime"
+                style="@style/editStyle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:ems="10"
+                android:hint="ex. 8:30"
+                android:inputType="time" />
+
+            <TextView
+                android:id="@+id/textView3"
+                style="@style/lblTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="to take on" />
+
+            <RadioGroup
+                android:id="@+id/rbgWeekDays"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RadioButton
+                    android:id="@+id/rbMonday"
+                    android:text="Monday"
+                    style="@style/rbStyle" />
+
+                <RadioButton
+                    android:id="@+id/rbTuesday"
+                    style="@style/rbStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Tuesday" />
+
+                <RadioButton
+                    android:id="@+id/rbWednesday"
+                    style="@style/rbStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wednesday" />
+
+                <RadioButton
+                    android:id="@+id/rbThursday"
+                    style="@style/rbStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Thursday" />
+
+                <RadioButton
+                    android:id="@+id/rbFriday"
+                    style="@style/rbStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Friday" />
+
+                <RadioButton
+                    android:id="@+id/rbSaturday"
+                    style="@style/rbStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Saturday" />
+
+                <RadioButton
+                    android:id="@+id/rbSunday"
+                    style="@style/rbStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Sunday" />
+            </RadioGroup>
+        </LinearLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</layout>

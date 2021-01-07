@@ -7,7 +7,7 @@ import androidx.room.*
 interface RemediDatabaseDao {
 
     // User Data
-    /*
+
     @Insert
     fun insert(user : UserData)
 
@@ -39,6 +39,6 @@ interface RemediDatabaseDao {
     @Delete
     fun delete(pillBoxData: PillBoxData)
 
-     */
+
 
 }
